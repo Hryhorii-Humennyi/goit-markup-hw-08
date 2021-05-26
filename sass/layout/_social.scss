@@ -1,0 +1,16 @@
+.social__text {
+  display: inline-block;
+  @include indent($indent: 0 0 20px 0);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: getColor('primary-white-color');
+}
+
+.footer__social {
+  @include indent($indent: 0 0 0 70px);
+}
