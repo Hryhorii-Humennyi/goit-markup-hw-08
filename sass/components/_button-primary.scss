@@ -24,7 +24,7 @@
 }
 
 .button__send {
-  @include centeredFlex();
+  @include centeredFlex($display: inline-flex);
   fill: getColor('primary-white-color');
 
   min-height: 50px;

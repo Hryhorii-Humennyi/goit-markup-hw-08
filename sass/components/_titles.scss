@@ -1,14 +1,21 @@
 .work__title,
 .team__title,
 .customers__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   color: getColor('main-dark-color');
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .team__title-card {
@@ -28,9 +35,14 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.58;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: getColor('main-dark-color');
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }

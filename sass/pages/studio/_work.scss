@@ -1,5 +1,9 @@
 .work {
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .container {
@@ -30,6 +34,7 @@
   height: 70px;
   justify-content: center;
   align-items: center;
+
   background-color: getColor('bgc-work-text');
   color: getColor('primary-white-color');
 }

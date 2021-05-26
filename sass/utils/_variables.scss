@@ -18,7 +18,6 @@ $colors: (
   'bgc-thumb-overlay': rgba(33, 150, 243, 0.9),
   'bgc-modal-backdrop': rgba(0, 0, 0, 0.2),
   'border-input-email': rgba(255, 255, 255, 0.3),
-  'border-close': rgba(0, 0, 0, 0.1),
 );
 
 @function getColor($key) {

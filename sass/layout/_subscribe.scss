@@ -1,5 +1,6 @@
 .footer__subscribe {
   margin-left: auto;
+  z-index: 1;
 }
 
 .subscribe__title {
@@ -17,20 +18,31 @@
 
 .subscribe__label {
   position: absolute;
-  top: 50%;
+  top: 15%;
   left: 17px;
-  transform: translateY(-50%);
+  transform: translateY(-15%);
   color: getColor('color-mail-phone');
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    left: 160px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .subscribe__form {
   position: relative;
-  display: flex;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscribe__input-email {
   padding: 15px 16px;
-  min-width: 358px;
 
   color: getColor('primary-white-color');
   background-color: transparent;
@@ -41,6 +53,23 @@
   &:focus + .subscribe__label,
   &:not(:placeholder-shown) + .subscribe__label {
     opacity: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
   }
 }
 
